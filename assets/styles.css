@@ -1,24 +1,26 @@
-/* Not a Developer: plain, warm, a bit of terminal */
+/* Not a Developer: plain, clean, a bit of terminal (green, like a terminal prompt) */
 
 :root {
-  --bg: #f6f3ec;
+  --bg: #f7f7f4;
   --card: #ffffff;
-  --ink: #161513;
-  --ink-soft: #55524b;
-  --line: #e2ddd1;
-  --accent: #ff6b3d;
-  --accent-ink: #161513;
+  --ink: #121412;
+  --ink-soft: #4f544f;
+  --line: #e3e5e0;
+  --accent: #1fbf6a;
+  --accent-text: #118a4a;
+  --accent-ink: #121412;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #141311;
-    --card: #1e1c19;
-    --ink: #f3efe6;
-    --ink-soft: #b3ada1;
-    --line: #34312b;
+    --bg: #0f1411;
+    --card: #171d19;
+    --ink: #f2f5f1;
+    --ink-soft: #a9b1aa;
+    --line: #2a332d;
+    --accent-text: #3ddc84;
   }
 }
 
@@ -52,7 +54,7 @@ a { color: inherit; }
   text-decoration: none;
   letter-spacing: -.01em;
 }
-.prompt { color: var(--accent); }
+.prompt { color: var(--accent-text); }
 .top-link { font-size: 15px; color: var(--ink-soft); text-decoration: none; }
 .top-link:hover { color: var(--ink); }
 
@@ -91,7 +93,7 @@ h1 s {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: .06em;
-  color: var(--accent);
+  color: var(--accent-text);
   margin-bottom: 8px;
 }
 .cta-card h2 { font-size: 24px; line-height: 1.2; letter-spacing: -.02em; margin-bottom: 10px; }
@@ -120,7 +122,7 @@ h1 s {
   padding: 20px 0;
   border-bottom: 1px solid var(--line);
 }
-.num { font-family: var(--mono); color: var(--accent); font-weight: 700; padding-top: 2px; }
+.num { font-family: var(--mono); color: var(--accent-text); font-weight: 700; padding-top: 2px; }
 .blocks h3 { font-size: 19px; letter-spacing: -.01em; }
 .blocks p { color: var(--ink-soft); }
 
